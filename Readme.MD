@@ -1,5 +1,15 @@
 # Make a PPP internet connection with LORANGA on Raspberry Pi
 
+## Start SIM module on your loranga board
+The Sim module on Loranga needs a wake-up signal from the Rpi
+The pin used for this is GPIO 22 (Physical pin 15)
+You need to send a High level for 2 seconds over GPIO 22 to wake-up or sleep the Sim module.
+
+1. Download the wake-sim python script
+`
+
+
+## Set-up the ppp connection
 LORANGA use Uart connection on Raspberry Pi. You can use following instructions to make it work.
 
 1. Firstly, Connect your Raspberry Pi to internet and run `sudo apt-get update` to update your Raspberry Pi
