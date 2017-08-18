@@ -23,7 +23,7 @@ LORANGA use Uart connection on Raspberry Pi. You can use following instructions 
     - `sudo nano /boot/config.txt` and add `enable_uart=1` to bottom of file then save and reboot for changes to take effect.
 
 3. Download ppp-creator.sh script and run. Script will install ppp and creates config files.
-  - `wget https://raw.githubusercontent.com/edu986/test_ppp/master/ppp-creator.sh
+  - `wget https://raw.githubusercontent.com/edu986/test_ppp/master/ppp-creator.sh`
   - `chmod +x ./ppp-creator.sh`
   - `sudo ./ppp-creator.sh INTERNET ttyAMA0` # Rpi3 > ttyS0 , others ttyAMA0 # INTERNET is APN, check your cellular
 
