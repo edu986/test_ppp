@@ -1,6 +1,6 @@
-# Make a PPP internet connection with Sixfab GPRS Shield on Raspberry Pi
+# Make a PPP internet connection with LORANGA on Raspberry Pi
 
-Gprs shield use Uart connection on Raspberry Pi. You can use following transactions for work.
+LORANGA use Uart connection on Raspberry Pi. You can use following instructions to make it work.
 
 1. Firstly, Connect your Raspberry Pi to internet and run `sudo apt-get update` to update your Raspberry Pi
 
@@ -23,7 +23,7 @@ Gprs shield use Uart connection on Raspberry Pi. You can use following transacti
     - `sudo nano /boot/config.txt` and add `enable_uart=1` to bottom of file then save and reboot for changes to take effect.
 
 3. Download ppp-creator.sh script and run. Script will install ppp and creates config files.
-  - `wget https://raw.githubusercontent.com/sixfab/rpiShields/master/tutorials/tutorial2/ppp-creator.sh`
+  - `wget https://raw.githubusercontent.com/edu986/test_ppp/master/ppp-creator.sh
   - `chmod +x ./ppp-creator.sh`
   - `sudo ./ppp-creator.sh INTERNET ttyAMA0` # Rpi3 > ttyS0 , others ttyAMA0 # INTERNET is APN, check your cellular
 
@@ -39,4 +39,3 @@ Gprs shield use Uart connection on Raspberry Pi. You can use following transacti
             RX bytes:3065 (2.9 KiB)  TX bytes:2657 (2.5 KiB)
 
   ```
-  
