@@ -1,15 +1,20 @@
 # Make a PPP internet connection with LORANGA on Raspberry Pi
 
-## Start SIM module on your loranga board
-The Sim module on Loranga needs a wake-up signal from the Rpi.
+## Start 2G module on your loranga board
+The 2G module on Loranga needs a wake-up signal from the Rpi.
 
 The pin used for this is GPIO 22 (Physical pin 15).
 
-You need to send a High level for 2 seconds over GPIO 22 to wake-up or sleep the Sim module.
+You need to send a High level for 2 seconds over GPIO 22 to wake-up or sleep the module.
 
 
-1. Download the wake-sim python script
-`
+1. Download the wake-2G python script
+- `wget https://raw.githubusercontent.com/edu986/test_ppp/edit_readme/wake-2G.py`
+
+2. Call the script in order to wake-up the 2G module
+- `sudo python wake-2G`
+
+3. This script can be added later on /etc/rc.local to auto wake-up at boot.
 
 
 ## Set-up the ppp connection
