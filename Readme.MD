@@ -1,6 +1,10 @@
 # Make a PPP internet connection with LORANGA on Raspberry Pi
 
 # test
+
+
+### Prueba 2
+
 ## Start 2G module on your loranga board
 The 2G module on Loranga needs a wake-up signal from the Rpi.
 
